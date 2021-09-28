@@ -1,15 +1,11 @@
 #!/usr/bin/python3
 
 class square():
-    
-    width = 0
-    height = 0
+    """Square class"""
 
-    
-    def __init__(self, *args, **kwargs):
-        if kwargs['width']:
-            setattr(self, 'width', kwargs['width'])
-            setattr(self, 'height', kwargs['width'])
+    def __init__(self, width, height):
+        self.width = width
+        self.height = width
 
     def area_of_my_square(self):
         """ Area of the square """
